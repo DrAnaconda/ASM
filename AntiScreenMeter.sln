@@ -1,8 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.Models", "AntiScreenMeter.Models\AntiScreenMeter.Models.csproj", "{E5C025DD-E724-4A1B-A94E-16A9C6170425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.WebApi", "AntiScreenMeter.WebApi\AntiScreenMeter.WebApi.csproj", "{80E046A1-F336-43F1-909F-3CBF914CD694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.ApiServices", "AntiScreenMeter.ApiServices\AntiScreenMeter.ApiServices.csproj", "{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.ScreenMeterFaker", "AntiScreenMeter.ScreenMeterFaker\AntiScreenMeter.ScreenMeterFaker.csproj", "{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.Tests", "AntiScreenMeter.Tests\AntiScreenMeter.Tests.csproj", "{856741C5-748C-4901-8A09-61B2F89DB7CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.HttpClient", "Tools.Library.HttpClient\Tools.Library.HttpClient.csproj", "{5C454188-7037-4ED9-BEF5-F1D7E005DD80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5C025DD-E724-4A1B-A94E-16A9C6170425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C025DD-E724-4A1B-A94E-16A9C6170425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C025DD-E724-4A1B-A94E-16A9C6170425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C025DD-E724-4A1B-A94E-16A9C6170425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E046A1-F336-43F1-909F-3CBF914CD694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E046A1-F336-43F1-909F-3CBF914CD694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E046A1-F336-43F1-909F-3CBF914CD694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E046A1-F336-43F1-909F-3CBF914CD694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856741C5-748C-4901-8A09-61B2F89DB7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856741C5-748C-4901-8A09-61B2F89DB7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856741C5-748C-4901-8A09-61B2F89DB7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856741C5-748C-4901-8A09-61B2F89DB7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

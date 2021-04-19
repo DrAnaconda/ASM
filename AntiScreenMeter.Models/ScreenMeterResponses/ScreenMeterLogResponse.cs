@@ -1,4 +1,6 @@
-﻿namespace AntiScreenMeter.Models.ScreenMeterResponses
+﻿using System.Collections.Generic;
+
+namespace AntiScreenMeter.Models.ScreenMeterResponses
 {
     public class ScreenMeterLogResponse
     {
