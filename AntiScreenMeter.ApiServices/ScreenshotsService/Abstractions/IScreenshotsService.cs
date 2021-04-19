@@ -1,7 +1,9 @@
-﻿namespace AntiScreenMeter.ApiServices.ScreenshotsService.Abstractions
+﻿using System.Threading.Tasks;
+
+namespace AntiScreenMeter.ApiServices.ScreenshotsService.Abstractions
 {
-    public class ScreenshotsService
+    public interface IScreenshotService
     {
-        
+        public Task<byte[]> GetRandomScreenshotAsync();
     }
 }

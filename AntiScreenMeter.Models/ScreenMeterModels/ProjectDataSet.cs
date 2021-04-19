@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using AntiScreenMeter.Models.ScreenMeterResponses;
 
-namespace AntiScreenMeter.Models.ScreenMeterResponses
+namespace AntiScreenMeter.Models.ScreenMeterModels
 {
     public class ProjectDataSet
     {
