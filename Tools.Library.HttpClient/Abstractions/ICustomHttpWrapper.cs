@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Tools.Library.HttpClient.CustomClasses;
+﻿using System.Threading.Tasks;
 
 namespace Tools.Library.HttpClient.Abstractions
 {

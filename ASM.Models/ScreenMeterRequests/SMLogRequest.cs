@@ -1,6 +1,5 @@
 ﻿using System;
 using ASM.Models.ScreenMeterModels;
-using ASM.Models.ScreenMeterResponses;
 
 namespace ASM.Models.ScreenMeterRequests
 {

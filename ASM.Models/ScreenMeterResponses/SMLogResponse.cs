@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ASM.Models.ScreenMeterResponses
+﻿namespace ASM.Models.ScreenMeterResponses
 {
     public class SMLogResponse
     {

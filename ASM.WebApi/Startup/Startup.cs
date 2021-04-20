@@ -1,6 +1,3 @@
-using ASM.ApiServices.FilesService.Abstractions;
-using ASM.ApiServices.FilesService.Implementations;
-using ASM.ApiServices.SMRepeater;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

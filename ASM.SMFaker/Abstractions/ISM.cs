@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using ASM.Models.ScreenMeterRequests;
 using ASM.Models.ScreenMeterResponses;
 
 namespace ASM.ScreenMeterFaker.Abstractions
