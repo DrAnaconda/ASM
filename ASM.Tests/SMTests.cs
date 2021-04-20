@@ -2,6 +2,8 @@ using System.IO;
 using System.Threading.Tasks;
 using ASM.ScreenMeterFaker.Abstractions;
 using ASM.ScreenMeterFaker.Configuration;
+using Microsoft.Extensions.Options;
+using Moq;
 using NUnit.Framework;
 
 namespace ASM.Tests
@@ -9,15 +11,12 @@ namespace ASM.Tests
     public class SMTests
     {
         private ISM _ism;
-        private SMConfiguration _smConfiguration;
+        private IOptions<SMConfiguration> _smConfiguration;
         
         [SetUp]
         public void Setup()
         {
-            this._smConfiguration = new SMConfiguration()
-            {
-                username = "***REMOVED***", password = "***REMOVED***"
-            };
+            this._smConfiguration = generateConfiguration();
             this._ism = new ScreenMeterFaker.Implementation.IsmFaker(_smConfiguration);
         }
 
@@ -42,6 +41,19 @@ namespace ASM.Tests
         {
             await this._ism.AuthorizeAsync();
             await this._ism.SendReportAsync();
+        }
+
+        private IOptions<SMConfiguration> generateConfiguration()
+        {
+            var mocker = new Mock<IOptions<SMConfiguration>>();
+            var config = new SMConfiguration()
+            {
+                username = "***REMOVED***", password = "***REMOVED***"
+            };
+
+            mocker.Setup(x => x.Value).Returns(config);
+            
+            return mocker.Object;
         }
     }
 }

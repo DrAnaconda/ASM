@@ -5,9 +5,12 @@
         <NoWarn>$(NoWarn);1591</NoWarn>
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>ASM.WebApi</RootNamespace>
+        <UserSecretsId>c36c8567-8e20-4177-bea7-becc5421c189</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
