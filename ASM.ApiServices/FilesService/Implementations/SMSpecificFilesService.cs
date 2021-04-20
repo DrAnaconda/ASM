@@ -34,7 +34,7 @@ namespace ASM.ApiServices.FilesService.Implementations
         public Task<byte[]> GetFileClosestToStringTimeAsync()
         {
             var filesInDirectory = getFilesInDirectory();
-            var currentDt = DateTime.Now;
+            var currentDt = DateTime.UtcNow;
             var targetDtString = $"Time_2021_{currentDt.Month}_{currentDt.Day}_{currentDt.Hour}_{currentDt.Minute}_{currentDt.Second}.png";
             var targetFile = _stringSimilarityTool.findTheMostSimilarString(filesInDirectory, targetDtString);
             return File.ReadAllBytesAsync(targetFile);
