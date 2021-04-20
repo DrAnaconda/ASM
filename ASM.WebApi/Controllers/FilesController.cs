@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using ASM.ApiServices.FilesService.Abstractions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.Extensions.Primitives;
 using Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme.Options;
 
 namespace Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme
