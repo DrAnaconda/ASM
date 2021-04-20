@@ -35,16 +35,15 @@ namespace ASM.ApiServices.FilesService.Implementations
         {
             var filesInDirectory = getFilesInDirectory();
             var currentDt = DateTime.Now;
-            var targetDtString = $"Time_{currentDt.Year}_{currentDt.Month}_{currentDt.Day}_{currentDt.Hour}_{currentDt.Minute}_{currentDt.Second}.png";
+            var targetDtString = $"Time_2021_{currentDt.Month}_{currentDt.Day}_{currentDt.Hour}_{currentDt.Minute}_{currentDt.Second}.png";
             var targetFile = _stringSimilarityTool.findTheMostSimilarString(filesInDirectory, targetDtString);
             return File.ReadAllBytesAsync(targetFile);
         }
 
         private string[] getFilesInDirectory()
         {
-            return Directory.GetFiles(
-                Path.Combine(Directory.GetCurrentDirectory(), 
-                    _configuration.pathToFolderWithFiles));
+            return Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(),
+                _configuration.pathToFolderWithFiles));
         }
     }
 }
