@@ -1,16 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.Models", "AntiScreenMeter.Models\AntiScreenMeter.Models.csproj", "{E5C025DD-E724-4A1B-A94E-16A9C6170425}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASM.Models", "ASM.Models\ASM.Models.csproj", "{E5C025DD-E724-4A1B-A94E-16A9C6170425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.WebApi", "AntiScreenMeter.WebApi\AntiScreenMeter.WebApi.csproj", "{80E046A1-F336-43F1-909F-3CBF914CD694}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASM.WebApi", "ASM.WebApi\ASM.WebApi.csproj", "{80E046A1-F336-43F1-909F-3CBF914CD694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.ApiServices", "AntiScreenMeter.ApiServices\AntiScreenMeter.ApiServices.csproj", "{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASM.ApiServices", "ASM.ApiServices\ASM.ApiServices.csproj", "{090D5ADB-B5AF-47B2-910E-DBC057C4E13A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.ScreenMeterFaker", "AntiScreenMeter.ScreenMeterFaker\AntiScreenMeter.ScreenMeterFaker.csproj", "{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASM.SMFaker", "ASM.SMFaker\ASM.SMFaker.csproj", "{7B1BE5C7-1E83-4803-9C9B-E5E072565E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiScreenMeter.Tests", "AntiScreenMeter.Tests\AntiScreenMeter.Tests.csproj", "{856741C5-748C-4901-8A09-61B2F89DB7CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASM.Tests", "ASM.Tests\ASM.Tests.csproj", "{856741C5-748C-4901-8A09-61B2F89DB7CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.HttpClient", "Tools.Library.HttpClient\Tools.Library.HttpClient.csproj", "{5C454188-7037-4ED9-BEF5-F1D7E005DD80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.Authorization", "Tools.Library.Authorization\Tools.Library.Authorization.csproj", "{9F135C19-38EE-4746-8BE5-5693B242FF8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.Authorization.Tests", "Tools.Library.Authorization.Tests\Tools.Library.Authorization.Tests.csproj", "{79B34C6C-A9AB-44D0-B912-69DEEBDFE7C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.Analyzers", "Tools.Library.Analyzers\Tools.Library.Analyzers.csproj", "{D459F7A8-9B56-4D6F-B435-2760D2D846D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.Analyzers.Tests", "Tools.Library.Analyzers.Tests\Tools.Library.Analyzers.Tests.csproj", "{C54E31D4-A574-420E-B353-CA6229B897CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +50,21 @@ Global
 		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C454188-7037-4ED9-BEF5-F1D7E005DD80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F135C19-38EE-4746-8BE5-5693B242FF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F135C19-38EE-4746-8BE5-5693B242FF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F135C19-38EE-4746-8BE5-5693B242FF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F135C19-38EE-4746-8BE5-5693B242FF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B34C6C-A9AB-44D0-B912-69DEEBDFE7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B34C6C-A9AB-44D0-B912-69DEEBDFE7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B34C6C-A9AB-44D0-B912-69DEEBDFE7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B34C6C-A9AB-44D0-B912-69DEEBDFE7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D459F7A8-9B56-4D6F-B435-2760D2D846D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D459F7A8-9B56-4D6F-B435-2760D2D846D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D459F7A8-9B56-4D6F-B435-2760D2D846D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D459F7A8-9B56-4D6F-B435-2760D2D846D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54E31D4-A574-420E-B353-CA6229B897CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54E31D4-A574-420E-B353-CA6229B897CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54E31D4-A574-420E-B353-CA6229B897CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54E31D4-A574-420E-B353-CA6229B897CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
