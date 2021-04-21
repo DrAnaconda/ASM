@@ -5,7 +5,7 @@ using Tools.Library.Analyzers.String.Implementations.SimilarityTool.LevenshteinT
 
 namespace Tools.Library.Analyzers.Tests
 {
-    public class Tests
+    public class StringSimilarityTests
     {
         private const string obviousDateTime = "Time_2021_04_05_11_35_27.png"; 
             
