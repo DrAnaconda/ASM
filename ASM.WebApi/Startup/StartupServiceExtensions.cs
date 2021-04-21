@@ -13,6 +13,8 @@ using ASM.ScreenMeterFaker.Implementation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Tools.Library.Analyzers.DateTime.Abstractions;
+using Tools.Library.Analyzers.DateTime.Implementations;
 using Tools.Library.Analyzers.String.Abstractions;
 using Tools.Library.Analyzers.String.Implementations.SimilarityTool.LevenshteinTools;
 using Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme;
@@ -73,7 +75,7 @@ namespace ASM.WebApi.Startup
         {
             services.Configure<FilesServiceConfiguration>(
                 options => configuration.GetSection(nameof(FilesServiceConfiguration)).Bind(options));
-            services.AddSingleton<IStringSimilarityTool, LevenshteinStringSimilarityTool>();
+            services.AddSingleton<IDateTimeAnalyzer, DateTimeAnalyzer>();
             services.AddSingleton<IFilesService, SMSpecificFilesService>();
         }
         

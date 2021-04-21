@@ -7,6 +7,9 @@
     &lt;TestId&gt;NUnit3x::856741C5-748C-4901-8A09-61B2F89DB7CC::net5.0::ASM.Tests.SMTests.SendEvent_ShouldNotFail_SemiAutomatic&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.Tests.FindTheMostSimilarString_ObviousInput_ShouldReturnTarget&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.Tests.FindTheMostSimilarSting_NotObviousInputShouldReturnClosest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.DateTimeAnalyzersTests.ParseDateTime_ShouldReturnCorrectOutput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.DateTimeAnalyzersTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=stringtified/@EntryIndexedValue">True</s:Boolean>
 	</wpf:ResourceDictionary>
