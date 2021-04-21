@@ -7,7 +7,8 @@ Or I did powerful solution which could kill `ScreenMeter` application. Srsly, ha
 
 1. Sends screenshots and syncing time according to screen meter configuration
 2. It selects screenshots FROM YOURS repository and sends it
-    1. It selects screenshot which the most similar (by string) to current nearest time (UTC+0)
+    0. Repository located at `wwwroot/images`
+    1. It selects screenshot which the most date time (ignoring year, month, day) to current nearest time (UTC+0)
     2. It is has simple authorization
     3. It is has super simple control panel (use swagger)
    
@@ -34,7 +35,7 @@ In `keys` list fill every appropriate password for swagger. This is all
 
 Use path to define where located images for 'ScreenShotsFilesService' within your environment
 
-# Other technical stuff and other things
+# Other technical stuff and other things (skip if don't want to do changes)
 
 Projects:
 1. ASM.ApiServices. This project have modules which is consumed by WebApi project / controllers
