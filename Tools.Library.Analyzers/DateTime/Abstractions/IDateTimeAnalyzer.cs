@@ -5,9 +5,9 @@ namespace Tools.Library.Analyzers.DateTime.Abstractions
     public interface IDateTimeAnalyzer
     {
         System.DateTime[] extractDateTimesFromStringArrays(IEnumerable<string> strings, 
-            string separator, 
-            int yearOverrider = -1, int monthOverrider = -1, int dayOverrider = -1);
+            string separator, bool ignoreFailed);
 
-        System.DateTime[] findTheMostClosestDateTime(System.DateTime current, System.DateTime target);
+        System.DateTime findTheMostClosestDateTime(System.DateTime target, IEnumerable<System.DateTime> pool,
+            bool ignoreYear, bool ignoreMonth, bool ignoreDay);
     }
 }

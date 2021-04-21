@@ -5,7 +5,7 @@ namespace Tools.Library.Analyzers
     {
         public static int intToStr(this string str)
         {
-            return int.Parse(str);
+            return int.Parse(str.TrimStart(new char[] { '0' }));
         }
     }
 }
