@@ -12,7 +12,7 @@ Or I did powerful solution which could kill `ScreenMeter` application. Srsly, ha
     3. It is has simple authorization
     4. It is has super simple control panel (use swagger)
    
-For more minor thing please, welcome to swagger. Swagger located at www.root.com/swagger
+For more minor things, please, welcome to swagger. Swagger located at www.root.com/swagger
 
 # Configuration
 
