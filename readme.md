@@ -7,10 +7,10 @@ Or I did powerful solution which could kill `ScreenMeter` application. Srsly, ha
 
 1. Sends screenshots and syncing time according to screen meter configuration
 2. It selects screenshots FROM YOURS repository and sends it
-    0. Repository located at `wwwroot/images`
-    1. It selects screenshot which the most date time (ignoring year, month, day) to current nearest time (UTC+0)
-    2. It is has simple authorization
-    3. It is has super simple control panel (use swagger)
+    1. Repository located at `wwwroot/images`
+    2. It selects screenshot which the most date time (ignoring year, month, day) to current nearest time (UTC+0)
+    3. It is has simple authorization
+    4. It is has super simple control panel (use swagger)
    
 For more minor thing please, welcome to swagger. Swagger located at www.root.com/swagger
 
