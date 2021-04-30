@@ -54,9 +54,11 @@ namespace ASM.ApiServices.SMRepeater
         private bool checkPause()
         {
             if (_repeaterConfiguration.isPaused) return true;
-            if (_repeaterConfiguration.whenPause != null && DateTime.UtcNow > _repeaterConfiguration.whenPause.Value)
+            if (_repeaterConfiguration.whenPause != null 
+                  && DateTime.UtcNow > _repeaterConfiguration.whenPause.Value)
             {
-                this._repeaterConfiguration.isPaused = true;
+                _repeaterConfiguration.isPaused = true;
+                _repeaterConfiguration.whenPause = null;
                 return true;
             }
 
