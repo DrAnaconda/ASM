@@ -12,7 +12,7 @@ Or I did powerful solution which could kill `ScreenMeter` application. Srsly, ha
     3. It is has simple authorization
     4. It is has super simple control panel (use swagger)
    
-For more minor things, please, welcome to swagger. Swagger located at www.root.com/swagger
+For more things check swagger. Swagger located at www.root.com/swagger
 
 # Configuration
 
@@ -21,6 +21,9 @@ Look at `appsettings.json` it is have all required settings to launch this appli
 `SMConfiguration` section:
 
 This is quite simple: fill login / password as is and Anti Screen Meter (ASM) module is configured
+You can use environment variables to set values for this config. But you should set field `readFromEnv` to `true`.
+For example, to set username for current config you should create env variable with name `SMConfiguration.username`. 
+Use this pattern everywhere where environment variable parsing is being supported. 
 
 `RepeaterConfiguration` section:
 
