@@ -1,15 +1,17 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=InconsistentNaming/@EntryIndexedValue">DO_NOT_SHOW</s:String>
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\RedCrown\AppData\Local\JetBrains\Rider2020.3\resharper-host\temp\Rider\vAny\CoverageData\_AntiScreenMeter.1623859729\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba1a3a8a_002D872e_002D4fbd_002Db159_002D171a357b187d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendScreenShot_ShouldNotFail_SemiAutomatic" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::856741C5-748C-4901-8A09-61B2F89DB7CC::net5.0::ASM.Tests.SMTests.SendScreenShot_ShouldNotFail_SemiAutomatic&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::856741C5-748C-4901-8A09-61B2F89DB7CC::net5.0::ASM.Tests.SMTests.SendEvent_ShouldNotFail_SemiAutomatic&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.Tests.FindTheMostSimilarString_ObviousInput_ShouldReturnTarget&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.Tests.FindTheMostSimilarSting_NotObviousInputShouldReturnClosest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.DateTimeAnalyzersTests.ParseDateTime_ShouldReturnCorrectOutput&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.DateTimeAnalyzersTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/home/dranaconda/.cache/JetBrains/Rider2021.1/resharper-host/temp/Rider/vAny/CoverageData/_AntiScreenMeter.8106097/Snapshot/snapshot.utdcvr</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba1a3a8a_002D872e_002D4fbd_002Db159_002D171a357b187d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendScreenShot_ShouldNotFail_SemiAutomatic" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::856741C5-748C-4901-8A09-61B2F89DB7CC::net5.0::ASM.Tests.SMTests.SendScreenShot_ShouldNotFail_SemiAutomatic&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::856741C5-748C-4901-8A09-61B2F89DB7CC::net5.0::ASM.Tests.SMTests.SendEvent_ShouldNotFail_SemiAutomatic&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.Tests.FindTheMostSimilarString_ObviousInput_ShouldReturnTarget&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.Tests.FindTheMostSimilarSting_NotObviousInputShouldReturnClosest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.DateTimeAnalyzersTests.ParseDateTime_ShouldReturnCorrectOutput&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::C54E31D4-A574-420E-B353-CA6229B897CF::net5.0::Tools.Library.Analyzers.Tests.DateTimeAnalyzersTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::36AE4093-AAED-4C09-8A47-6081D10FCB1A::net5.0::Tools.Configuration.Tests.EnvParserTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=stringtified/@EntryIndexedValue">True</s:Boolean>
 	</wpf:ResourceDictionary>
