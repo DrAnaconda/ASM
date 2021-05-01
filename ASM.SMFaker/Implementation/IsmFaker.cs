@@ -7,6 +7,7 @@ using ASM.Models.ScreenMeterResponses;
 using ASM.ScreenMeterFaker.Abstractions;
 using ASM.ScreenMeterFaker.Configuration;
 using Microsoft.Extensions.Options;
+using Tools.Configuration.Parser;
 using Tools.Library.HttpClient.Abstractions;
 using Tools.Library.HttpClient.Implementations;
 
@@ -26,8 +27,17 @@ namespace ASM.ScreenMeterFaker.Implementation
         public IsmFaker(IOptions<SMConfiguration> configuration)
         {
             if (configuration == null) throw new ArgumentNullException(nameof(configuration));
-            this._smConfiguration = configuration.Value;
-            this._customHttpWrapper = new RestClientWrapper(this._smConfiguration.baseUrl);
+            _smConfiguration = configuration.Value; 
+            configureService();
+            _customHttpWrapper = new RestClientWrapper(_smConfiguration.baseUrl);
+        }
+
+        private void configureService()
+        {
+            if (_smConfiguration.readFromEnv)
+            {
+                EnvironmentConfigurationParser.AutoParseProperties(_smConfiguration, false);
+            }
         }
 
         public async Task<SMLoginResponse> AuthorizeAsync()

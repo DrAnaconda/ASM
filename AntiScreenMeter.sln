@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.Analyzers", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Library.Analyzers.Tests", "Tools.Library.Analyzers.Tests\Tools.Library.Analyzers.Tests.csproj", "{C54E31D4-A574-420E-B353-CA6229B897CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Configuration", "Tools.Configuration\Tools.Configuration.csproj", "{A1A463D6-7CAE-47CA-AA8D-D78747690A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Configuration.Tests", "Tools.Configuration.Tests\Tools.Configuration.Tests.csproj", "{36AE4093-AAED-4C09-8A47-6081D10FCB1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +70,13 @@ Global
 		{C54E31D4-A574-420E-B353-CA6229B897CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C54E31D4-A574-420E-B353-CA6229B897CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C54E31D4-A574-420E-B353-CA6229B897CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A463D6-7CAE-47CA-AA8D-D78747690A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A463D6-7CAE-47CA-AA8D-D78747690A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A463D6-7CAE-47CA-AA8D-D78747690A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A463D6-7CAE-47CA-AA8D-D78747690A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AE4093-AAED-4C09-8A47-6081D10FCB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AE4093-AAED-4C09-8A47-6081D10FCB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AE4093-AAED-4C09-8A47-6081D10FCB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AE4093-AAED-4C09-8A47-6081D10FCB1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

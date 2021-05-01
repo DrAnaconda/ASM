@@ -7,6 +7,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ASM.Models\ASM.Models.csproj" />
+      <ProjectReference Include="..\Tools.Configuration\Tools.Configuration.csproj" />
       <ProjectReference Include="..\Tools.Library.HttpClient\Tools.Library.HttpClient.csproj" />
     </ItemGroup>
 
