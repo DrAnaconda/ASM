@@ -12,16 +12,17 @@ using Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme.Options;
 namespace Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme
 {
     // TODO: Move into shared repository
-    public sealed class WhiteListAuthorizationScheme : AuthenticationHandler<WhiteListAuthSchemeOptions>
+    public sealed class WhiteListAuthorizationScheme : 
+        AuthenticationHandler<WhiteListAuthSchemeOptions>
     {
-        private readonly IReadOnlyCollection<string> _authorizedKeys;
+        private readonly WhiteListAuthSchemeOptions _config;
 
         public WhiteListAuthorizationScheme(
             IOptionsMonitor<WhiteListAuthSchemeOptions> options,
             ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)
             : base(options, logger, encoder, clock)
         {
-            _authorizedKeys = options.CurrentValue.keys;
+            _config = options.CurrentValue;
         }
         
         private static string extractToken(HttpRequest context)
@@ -34,12 +35,13 @@ namespace Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme
         protected override Task<AuthenticateResult> HandleAuthenticateAsync()
         {
             var token = extractToken(Request);
-            if (token?.Any() == true && _authorizedKeys.Contains(token))
+            if ((token?.Any() == true && _config.keys.Contains(token)) 
+                || !_config.isEnabled)
             {
                 // TODO: Move scheme name to options
-                var identity = new ClaimsIdentity("Default");
+                var identity = new ClaimsIdentity(_config.authorizationSchemeName);
                 var claims = new ClaimsPrincipal(identity);
-                var ticket = new AuthenticationTicket(claims, "Default");
+                var ticket = new AuthenticationTicket(claims, _config.authorizationSchemeName);
                 return Task.FromResult(AuthenticateResult.Success(ticket));
             }
             
