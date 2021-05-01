@@ -32,6 +32,11 @@ namespace ASM.WebApi.Controllers
             return Ok(_repeaterConfiguration);
         }
         
+        /// <summary>
+        /// Current time + X minutes = time when we need to pause ASM
+        /// </summary>
+        /// <param name="minutesInAdvance"></param>
+        /// <returns></returns>
         [HttpPatch("set-auto-pause/minutes-advancing")]
         [ProducesResponseType(typeof(RepeaterConfiguration), StatusCodes.Status200OK)]
         public ActionResult SetAutoPauseMinutesScale([FromQuery] int minutesInAdvance)

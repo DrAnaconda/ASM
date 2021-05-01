@@ -14,6 +14,7 @@ COPY ["ASM.SMFaker/ASM.SMFaker.csproj", "ASM.SMFaker/"]
 COPY ["Tools.Library.HttpClient/Tools.Library.HttpClient.csproj", "Tools.Library.HttpClient/"]
 COPY ["ASM.Models/ASM.Models.csproj", "ASM.Models/"]
 COPY ["Tools.Library.Analyzers/Tools.Library.Analyzers.csproj", "Tools.Library.Analyzers/"]
+COPY ["Tools.Configuration/Tools.Configuration.csproj", "Tools.Configuration/"]
 RUN dotnet restore "ASM.WebApi/ASM.WebApi.csproj"
 COPY . .
 WORKDIR "/src/ASM.WebApi"
