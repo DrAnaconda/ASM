@@ -48,7 +48,7 @@ namespace ASM.Tests
             var mocker = new Mock<IOptions<SMConfiguration>>();
             var config = new SMConfiguration()
             {
-                username = "***REMOVED***", password = "***REMOVED***"
+                username = "YourScreenMeterUser", password = "YourScreenMeterPassword"
             };
 
             mocker.Setup(x => x.Value).Returns(config);
