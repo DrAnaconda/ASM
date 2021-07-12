@@ -1,5 +1,7 @@
+using System;
 using System.IO;
 using System.Threading.Tasks;
+using ASM.Models.ScreenMeterRequests;
 using ASM.ScreenMeterFaker.Abstractions;
 using ASM.ScreenMeterFaker.Configuration;
 using Microsoft.Extensions.Options;
@@ -18,6 +20,15 @@ namespace ASM.Tests
         {
             this._smConfiguration = generateConfiguration();
             this._ism = new ScreenMeterFaker.Implementation.IsmFaker(_smConfiguration);
+        }
+
+        [Test]
+        public async Task RetrieveTimeSheets_ShouldNotFail()
+        {
+            var request = generateTimesheetRequest();
+            var authResponse = await _ism.AuthorizeAsync();
+            var userData = await _ism.RetrieveUserData();
+            var result = await _ism.RetrieveTimeSheetAsync(request);
         }
 
         [Test, Explicit]
@@ -42,6 +53,13 @@ namespace ASM.Tests
             await this._ism.AuthorizeAsync();
             await this._ism.SendReportAsync();
         }
+
+        private SMTimesheetRequest generateTimesheetRequest()
+        {
+            var dt = DateTime.Now;
+            return new(dt.Day, dt.Month, dt.Year);
+        }
+        
 
         private IOptions<SMConfiguration> generateConfiguration()
         {

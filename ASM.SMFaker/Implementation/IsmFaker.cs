@@ -7,9 +7,11 @@ using ASM.Models.ScreenMeterResponses;
 using ASM.ScreenMeterFaker.Abstractions;
 using ASM.ScreenMeterFaker.Configuration;
 using Microsoft.Extensions.Options;
+using RestSharp;
 using Tools.Configuration.Parser;
 using Tools.Library.HttpClient.Abstractions;
 using Tools.Library.HttpClient.Implementations;
+using Parameter = Tools.Library.HttpClient.CustomClasses.Parameter;
 
 namespace ASM.ScreenMeterFaker.Implementation
 {
@@ -17,6 +19,7 @@ namespace ASM.ScreenMeterFaker.Implementation
 
     public class IsmFaker : ISM
     {
+        private UserModel currentUser { get; set; } = null;
         private SMLoginResponse SmServerSettings { get; set; } = null;
         private LogData previousLogData { get; set; } = null;
 
@@ -80,6 +83,34 @@ namespace ASM.ScreenMeterFaker.Implementation
         {
             var request = buildLogRequest(false);
             return retrieveLinksForUploadingOrJustSync(request);
+        }
+
+        public async Task<UserModel> RetrieveUserData()
+        {
+            var url = $"{_smConfiguration.baseUrlUi}/TimeSheet/UserIndex";
+            var result = await _customHttpWrapper.MakeGetRequestAsync<object>(url, ArraySegment<Parameter>.Empty);
+            
+            throw new NotImplementedException();
+        }
+
+        public async Task<TimeSheetPage> RetrieveTimeSheetAsync(SMTimesheetRequest timesheetRequest)
+        {
+            var httpParams = new Parameter[]
+            {
+                new(ParameterType.QueryString, nameof(SMTimesheetRequest.year), timesheetRequest.year.ToString()),
+                new(ParameterType.QueryString, nameof(SMTimesheetRequest.day), timesheetRequest.day),
+                new(ParameterType.QueryString, nameof(SMTimesheetRequest.month), timesheetRequest.month),
+                new Parameter(ParameterType.QueryString, nameof(SMTimesheetRequest.diff), timesheetRequest.diff.ToString())
+            };
+            var requestUrl = $"{_smConfiguration.baseUrlUi}/TimeSheet/UserIndex/{this.SmServerSettings.guid}";
+            var response = await _customHttpWrapper.MakeGetRequestAsync<object>(requestUrl, httpParams);
+
+            throw new NotImplementedException();
+        }
+
+        public Task PublishManualLogAsync(SMManualLogCreateRequest request)
+        {
+            throw new NotImplementedException();
         }
 
         #region Logger builder

@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using RestSharp;
 using Tools.Library.HttpClient.Abstractions;
 using Tools.Library.HttpClient.Exceptions;
+using Parameter = Tools.Library.HttpClient.CustomClasses.Parameter;
 
 namespace Tools.Library.HttpClient.Implementations
 {
@@ -61,6 +63,32 @@ namespace Tools.Library.HttpClient.Implementations
             }
 
             throw new HttpRequestException($"Request failed", new HttpLevelException(response));
+        }
+
+        public async Task<TReturnType> MakeGetRequestAsync<TReturnType>(string resource, IEnumerable<Parameter> parameters)
+        {
+            var request = new RestRequest(Method.GET);
+            AppendParameters(parameters, request);
+            
+            // TODO: Move to configuration starts here
+            
+            request.AddHeader("User-Agent",
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) screenmeter/3.5.3 Chrome/80.0.3987.158 Electron/8.2.0 Safari/537.36");
+
+            //TODO: Move to configuration ends here
+
+            request.Resource = resource;
+
+            var response = await this.httpClient.ExecuteAsync<TReturnType>(request);
+            if (response.IsSuccessful) return response.Data;
+            
+            throw new HttpRequestException($"Request failed", new HttpLevelException(response));
+        }
+
+        private void AppendParameters(IEnumerable<Parameter> parameters, RestRequest request)
+        {
+            foreach (var parameter in parameters)
+                request.AddParameter(parameter.pVal, parameter.pName, parameter.pType);
         }
     }
 }

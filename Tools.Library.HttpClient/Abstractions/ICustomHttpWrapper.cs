@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Tools.Library.HttpClient.CustomClasses;
 
 namespace Tools.Library.HttpClient.Abstractions
 {
@@ -8,5 +10,6 @@ namespace Tools.Library.HttpClient.Abstractions
             TRequestType requestBody, string resourcePath);
 
         Task MakeJsonPutRequestAsync(byte[] requestBody, string fullConfiguredPath);
+        Task<TReturnType> MakeGetRequestAsync<TReturnType>(string resource, IEnumerable<Parameter> parameters);
     }
 }

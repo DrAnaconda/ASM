@@ -1,4 +1,4 @@
-﻿namespace ASM.Models.ScreenMeterResponses
+﻿namespace ASM.Models.ScreenMeterModels
 {
     public class CompletedTask
     {
