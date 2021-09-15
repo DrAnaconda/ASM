@@ -29,8 +29,8 @@ namespace ASM.WebApi.Startup
             services.AddControllers();
             services.ConfigureAuthorizationSchemes(Configuration);
             services.ConfigureSwagger();
-            services.ConfigureFilesService(Configuration);
-            services.ConfigureSMRepeater(Configuration);
+            //services.ConfigureFilesService(Configuration);
+            //services.ConfigureSMRepeater(Configuration);
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

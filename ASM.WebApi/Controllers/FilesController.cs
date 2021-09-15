@@ -2,6 +2,7 @@
 using ASM.ApiServices.FilesService.Abstractions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ASM.WebApi.Controllers
 {
@@ -30,4 +31,5 @@ namespace ASM.WebApi.Controllers
             return base.File(fileBytes, "image/png");
         }
     }
+
 }
