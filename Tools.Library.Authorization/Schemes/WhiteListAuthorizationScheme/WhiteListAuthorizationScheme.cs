@@ -35,8 +35,7 @@ namespace Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme
         protected override Task<AuthenticateResult> HandleAuthenticateAsync()
         {
             var token = extractToken(Request);
-            if ((token?.Any() == true && _config.keys.Contains(token)) 
-                || !_config.isEnabled)
+            if (token?.Any() == true && _config?.keys?.Contains(token) == true && _config?.isEnabled == true)
             {
                 // TODO: Move scheme name to options
                 var identity = new ClaimsIdentity(_config.authorizationSchemeName);

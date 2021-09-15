@@ -6,7 +6,7 @@ namespace Tools.Library.Authorization.Schemes.WhiteListAuthorizationScheme.Optio
     public class WhiteListAuthSchemeOptions : AuthenticationSchemeOptions
     {
         public string authorizationSchemeName { get; set; } = nameof(WhiteListAuthorizationScheme);
-        public bool isEnabled { get; set; } = true;
+        public bool isEnabled { get; set; }
         public List<string> keys { get; set; }
     }
 }
