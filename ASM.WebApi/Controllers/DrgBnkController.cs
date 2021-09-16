@@ -58,6 +58,9 @@ namespace ASM.WebApi.Controllers
         [HttpGet("conditions")]
         public IActionResult Conditions()
         {
+            Response.Headers.Add("X-Per-Page","9");
+            Response.Headers.Add("X-Total-Count", "9");
+        
             return Ok(
                 "[    {        \"name\": \"ER+ and AR+ Breast Cancer\",        \"drugbank_id\": \"DBCOND0074929\",        \"uniprot_id\": null,        \"icd10_id\": null    },    {        \"name\": \"Primary Breast Cancer AR+ve TNBN\",        \"drugbank_id\": \"DBCOND0078365\",        \"uniprot_id\": null,        \"icd10_id\": null    },    {        \"name\": \"Acute Rejection (AR) of Transplanted Kidney\",        \"drugbank_id\": \"DBCOND0056337\",        \"uniprot_id\": null,        \"icd10_id\": null    },    {        \"name\": \"Rhinitis, Allergic\",        \"drugbank_id\": \"DBCOND0041847\",        \"uniprot_id\": null,        \"icd10_id\": \"c/J30.9\"    },    {        \"name\": \"Rhinitis Allergic\",        \"drugbank_id\": \"DBCOND0035656\",        \"uniprot_id\": null,        \"icd10_id\": \"c/J30.9\"    },    {        \"name\": \"Allergic Rhinitis (AR)\",        \"drugbank_id\": \"DBCOND0053380\",        \"uniprot_id\": null,        \"icd10_id\": \"c/J30.9\"    },    {        \"name\": \"Allergic Rhinitis\",        \"drugbank_id\": \"DBCOND0029366\",        \"uniprot_id\": null,        \"icd10_id\": \"c/J30.9\"    },    {        \"name\": \"Allergic Rhinitis (Disorder)\",        \"drugbank_id\": \"DBCOND0040015\",        \"uniprot_id\": null,        \"icd10_id\": \"c/J30.9\"    },    {        \"name\": \"Rhinitis,Allergic\",        \"drugbank_id\": \"DBCOND0078695\",        \"uniprot_id\": null,        \"icd10_id\": \"c/J30.9\"    }]");
         }
